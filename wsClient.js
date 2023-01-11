@@ -4,7 +4,7 @@ const wsUrl = 'ws://localhost:8000'
 let wsClient = null
 const message = {
     jsonrpc: '2.0',
-    method: 'deviceInfo',
+    method: 'deviceID',
     params: {
         deviceID: '123456789'
     }
@@ -17,15 +17,16 @@ function connect() {
     wsClient = new WebSocket(wsUrl)
     wsClient.onopen = ()=>{
         console.log('connection opened!!!');
+        sendMessage()
         // sendMessageInterval()
-        wsClient.send(JSON.stringify(message))
-        wsClient.send(JSON.stringify({
-            jsonrpc: '2.0',
-            method: 'msgTest',
-            params: {
-                msg: 'message'
-            }
-        }))
+        // wsClient.send(JSON.stringify(message))
+        // wsClient.send(JSON.stringify({
+        //     jsonrpc: '2.0',
+        //     method: 'msgTest',
+        //     params: {
+        //         msg: 'message'
+        //     }
+        // }))
     }
     wsClient.onclose = ()=>{
         console.log('connection closed!!!');
@@ -39,6 +40,7 @@ function connect() {
     }
 }
 function sendMessage() {
+    console.log(message)
     wsClient.send(JSON.stringify(message))
 }
 

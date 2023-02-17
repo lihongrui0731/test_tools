@@ -1,0 +1,1045 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "Open Asset Import Library (assimp v5.2.9ace81a3)"
+    },
+    "extensionsUsed": [
+        "KHR_materials_pbrSpecularGlossiness",
+        "FB_ngon_encoding"
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "max": [
+                90.0,
+                80.0,
+                -0.0
+            ],
+            "min": [
+                0.0,
+                0.0,
+                -0.0
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC2",
+            "max": [
+                1.0,
+                1.0
+            ],
+            "min": [
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 24,
+            "type": "SCALAR",
+            "max": [
+                23
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 6,
+            "type": "VEC3",
+            "max": [
+                90.0,
+                80.0,
+                -10.0
+            ],
+            "min": [
+                0.0,
+                0.0,
+                -10.0
+            ]
+        },
+        {
+            "bufferView": 4,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 6,
+            "type": "SCALAR",
+            "max": [
+                5
+            ],
+            "min": [
+                0
+            ]
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 672,
+            "uri": "result.bin"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 288,
+            "byteLength": 192,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 480,
+            "byteLength": 96,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 576,
+            "byteLength": 72,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 648,
+            "byteLength": 24,
+            "target": 34963
+        }
+    ],
+    "images": [
+        {
+            "uri": "C:\\Users\\86159\\AppData\\Local\\Temp\\IMMI\\MODEL_P.BMP"
+        },
+        {
+            "uri": "C:\\Users\\86159\\AppData\\Local\\Temp\\IMMI\\MODEL_R.BMP"
+        }
+    ],
+    "materials": [
+        {
+            "name": "HoehenrasterMaterial",
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 0
+                },
+                "baseColorFactor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    0.5
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        0.5
+                    ],
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0,
+                    "diffuseTexture": {
+                        "index": 0
+                    }
+                }
+            }
+        },
+        {
+            "name": "PegelrasterMaterial",
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                },
+                "baseColorFactor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    0.5
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        0.5
+                    ],
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0,
+                    "diffuseTexture": {
+                        "index": 1
+                    }
+                }
+            }
+        },
+        {
+            "name": "HLINMaterial",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0
+                }
+            }
+        },
+        {
+            "name": "TEXTMaterial",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0
+                }
+            }
+        },
+        {
+            "name": "IPktMaterial",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    1.0,
+                    0.5019609928131104,
+                    0.007842999882996083,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        1.0,
+                        0.5019609928131104,
+                        0.007842999882996083,
+                        1.0
+                    ],
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0
+                }
+            }
+        },
+        {
+            "name": "WANDMaterial",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.08235300332307816,
+                    0.5411760210990906,
+                    1.0,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        0.08235300332307816,
+                        0.5411760210990906,
+                        1.0,
+                        1.0
+                    ],
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0
+                }
+            }
+        },
+        {
+            "name": "HAUSMaterial",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.08235300332307816,
+                    0.5411760210990906,
+                    1.0,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        0.08235300332307816,
+                        0.5411760210990906,
+                        1.0,
+                        1.0
+                    ],
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0
+                }
+            }
+        },
+        {
+            "name": "NPflMaterial",
+            "pbrMetallicRoughness": {
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0
+                }
+            }
+        },
+        {
+            "name": "FLQiMaterial",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        1.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0
+                }
+            }
+        },
+        {
+            "name": "ZAttr0Material",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0
+                }
+            }
+        },
+        {
+            "name": "ZAttr1Material",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        1.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0
+                }
+            }
+        },
+        {
+            "name": "ZAttr2Material",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.6000000238418579,
+                    0.6000000238418579,
+                    0.6000000238418579,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        0.6000000238418579,
+                        0.6000000238418579,
+                        0.6000000238418579,
+                        1.0
+                    ],
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0
+                }
+            }
+        },
+        {
+            "name": "ZAttr3Material",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    1.0,
+                    0.23137299716472627,
+                    0.23137299716472627,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        1.0,
+                        0.23137299716472627,
+                        0.23137299716472627,
+                        1.0
+                    ],
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0
+                }
+            }
+        },
+        {
+            "name": "ZAttr4Material",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0
+                }
+            }
+        },
+        {
+            "name": "WEAMaterial",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        0.0,
+                        1.0,
+                        0.0,
+                        1.0
+                    ],
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0
+                }
+            }
+        },
+        {
+            "name": "BLACK1Material",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        0.5,
+                        0.5,
+                        0.5,
+                        1.0
+                    ],
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0
+                }
+            }
+        },
+        {
+            "name": "Dach1Material",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.5507810115814209,
+                    0.2851560115814209,
+                    0.1914059966802597,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        0.5507810115814209,
+                        0.2851560115814209,
+                        0.1914059966802597,
+                        1.0
+                    ],
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0
+                }
+            }
+        },
+        {
+            "name": "Dach2Material",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.4726560115814209,
+                    0.140625,
+                    0.1367190033197403,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        0.4726560115814209,
+                        0.140625,
+                        0.1367190033197403,
+                        1.0
+                    ],
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0
+                }
+            }
+        },
+        {
+            "name": "SUBREFLMaterial",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.784313976764679,
+                    0.784313976764679,
+                    0.784313976764679,
+                    0.5
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        0.784313976764679,
+                        0.784313976764679,
+                        0.784313976764679,
+                        0.5
+                    ],
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0
+                }
+            }
+        },
+        {
+            "name": "LEGENDECOL1Material",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.749019980430603,
+                    0.8901960253715515,
+                    0.7058820128440857,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        0.749019980430603,
+                        0.8901960253715515,
+                        0.7058820128440857,
+                        1.0
+                    ],
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0
+                }
+            }
+        },
+        {
+            "name": "LEGENDECOL2Material",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.3098039925098419,
+                    0.6588240265846252,
+                    0.20000000298023225,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        0.3098039925098419,
+                        0.6588240265846252,
+                        0.20000000298023225,
+                        1.0
+                    ],
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0
+                }
+            }
+        },
+        {
+            "name": "LEGENDECOL3Material",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.058823999017477038,
+                    0.4392159879207611,
+                    0.20000000298023225,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        0.058823999017477038,
+                        0.4392159879207611,
+                        0.20000000298023225,
+                        1.0
+                    ],
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0
+                }
+            }
+        },
+        {
+            "name": "LEGENDECOL4Material",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    1.0,
+                    0.9607840180397034,
+                    0.23529399931430818,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        1.0,
+                        0.9607840180397034,
+                        0.23529399931430818,
+                        1.0
+                    ],
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0
+                }
+            }
+        },
+        {
+            "name": "LEGENDECOL5Material",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.67843097448349,
+                    0.47843098640441897,
+                    0.3098039925098419,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        0.67843097448349,
+                        0.47843098640441897,
+                        0.3098039925098419,
+                        1.0
+                    ],
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0
+                }
+            }
+        },
+        {
+            "name": "LEGENDECOL6Material",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    1.0,
+                    0.3882350027561188,
+                    0.21176500618457795,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        1.0,
+                        0.3882350027561188,
+                        0.21176500618457795,
+                        1.0
+                    ],
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0
+                }
+            }
+        },
+        {
+            "name": "LEGENDECOL7Material",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.7803919911384583,
+                    0.09019599854946137,
+                    0.07058800011873245,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        0.7803919911384583,
+                        0.09019599854946137,
+                        0.07058800011873245,
+                        1.0
+                    ],
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0
+                }
+            }
+        },
+        {
+            "name": "LEGENDECOL8Material",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.5411760210990906,
+                    0.07058800011873245,
+                    0.07843100279569626,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        0.5411760210990906,
+                        0.07058800011873245,
+                        0.07843100279569626,
+                        1.0
+                    ],
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0
+                }
+            }
+        },
+        {
+            "name": "LEGENDECOL9Material",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.5686269998550415,
+                    0.058823999017477038,
+                    0.4000000059604645,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        0.5686269998550415,
+                        0.058823999017477038,
+                        0.4000000059604645,
+                        1.0
+                    ],
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0
+                }
+            }
+        },
+        {
+            "name": "LEGENDECOL10Material",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.16078400611877442,
+                    0.450980007648468,
+                    0.7215690016746521,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        0.16078400611877442,
+                        0.450980007648468,
+                        0.7215690016746521,
+                        1.0
+                    ],
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0
+                }
+            }
+        },
+        {
+            "name": "LEGENDECOL11Material",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.03921600058674812,
+                    0.2588239908218384,
+                    0.47058799862861636,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        0.03921600058674812,
+                        0.2588239908218384,
+                        0.47058799862861636,
+                        1.0
+                    ],
+                    "specularFactor": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "glossinessFactor": 0.0
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "World",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 0,
+                    "indices": 2,
+                    "attributes": {
+                        "POSITION": 0,
+                        "TEXCOORD_0": 1
+                    }
+                },
+                {
+                    "mode": 4,
+                    "material": 0,
+                    "indices": 4,
+                    "attributes": {
+                        "POSITION": 3
+                    }
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "World",
+            "matrix": [
+                1.0,
+                0.0,
+                -0.0,
+                0.0,
+                0.0,
+                0.17364799976348878,
+                -0.9848080277442932,
+                0.0,
+                -0.0,
+                0.9848080277442932,
+                0.17364799976348878,
+                -0.0,
+                -45.0,
+                -6.945927143096924,
+                39.392311096191409,
+                1.0
+            ],
+            "mesh": 0
+        }
+    ],
+    "samplers": [
+        {},
+        {}
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "source": 0,
+            "sampler": 0
+        },
+        {
+            "source": 1,
+            "sampler": 1
+        }
+    ],
+    "scene": 0
+}

@@ -1,6 +1,6 @@
 const WebSocket = require('ws')
 // const wsUrl = 'ws://sh85bq.rhythm-tech.com:10000'
-const wsUrl = 'ws://localhost:8000'
+const wsUrl = 'ws://10.0.0.42:8000'
 let wsClient = null
 const message = {
     jsonrpc: '2.0',

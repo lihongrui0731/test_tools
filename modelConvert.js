@@ -9,6 +9,7 @@ module.exports = {
         let targetExt = '';
         if (source) sourceExt = `.${source}`
         if (target) targetExt = `.${target}`
+        workDir = workDir.endsWith('/')? workDir : workDir + '/';
         let targetDir = 'Station-Model-Converted6666666/'
         await this.checkDir(targetDir)
         let fileList = await fsp.readdir(workDir, {encoding: 'utf8', withFileTypes: true})
@@ -17,7 +18,7 @@ module.exports = {
         assimpjs.then(async (ajs) => {
             for (let i = 0; i < files.length; i++) {
                 if (files[i].endsWith(sourceExt)) {
-                    let filePath = workDir.endsWith('/') ? workDir + files[i] : workDir + '/' + files[i]
+                    let filePath = workDir + files[i];
                     let resultFile = ajs.ConvertFile(
                         files[i],
                         target,

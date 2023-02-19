@@ -4,13 +4,12 @@ const assimpjs = require('assimpjs')()
 
 
 module.exports = {
-    async convert(workDir, source, target) {
+    async convert(workDir, targetDir, source, target) {
         let sourceExt = '';
         let targetExt = '';
         if (source) sourceExt = `.${source}`
         if (target) targetExt = `.${target}`
         workDir = workDir.endsWith('/')? workDir : workDir + '/';
-        let targetDir = 'Station-Model-Converted6666666/'
         await this.checkDir(targetDir)
         let fileList = await fsp.readdir(workDir, {encoding: 'utf8', withFileTypes: true})
         let files = fileList.map(file => file.name)

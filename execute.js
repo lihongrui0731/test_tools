@@ -1,3 +1,3 @@
 const ModelConvert = require('./modelConvert.js')
 
-ModelConvert.convert('Station-Model', 'X', 'glb2')
+ModelConvert.convert('Station-Model', 'Station-Model-Converted6666666/', 'X', 'glb2')

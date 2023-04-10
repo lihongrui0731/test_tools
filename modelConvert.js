@@ -1,6 +1,7 @@
 const fs = require('fs')
 const fsp = require('fs').promises
 const assimpjs = require('assimpjs')()
+const obj2gltf = require('obj2gltf')
 
 
 module.exports = {
@@ -34,6 +35,14 @@ module.exports = {
                     await fsp.writeFile(targetDir + files[i].replace(sourceExt, targetExt), glbContent, {flag: 'w+'})
                 }
             }
+        })
+    },
+
+    async obj2gltf() {
+        const objDir = 'Transformer-model/transformer.obj';
+        await obj2gltf(objDir).then(gltf => {
+            const res = Buffer.from(JSON.stringify(gltf))
+            fs.writeFileSync('Transformer-model/transformer.gltf', res)
         })
     },
 

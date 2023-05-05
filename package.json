@@ -2,9 +2,11 @@
   "dependencies": {
     "assimpjs": "^0.0.9",
     "fft.js": "^4.0.4",
+    "node-xlsx": "^0.21.2",
     "obj2gltf": "^3.1.6",
     "spectrum-analyzer": "^1.2.2",
     "wavefile": "^5.0.0",
-    "ws": "^8.9.0"
+    "ws": "^8.9.0",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.19.3/xlsx-0.19.3.tgz"
   }
 }

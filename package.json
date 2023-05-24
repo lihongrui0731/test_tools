@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "assimpjs": "^0.0.9",
-    "binary-bmp": "^0.0.2",
+    "binary-bmp": "^1.0.1",
     "fft.js": "^4.0.4",
     "jimp": "^0.22.7",
     "node-xlsx": "^0.21.2",

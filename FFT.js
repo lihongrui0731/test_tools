@@ -10,7 +10,7 @@ let fft;
 fsp.readFile('waveFiles/waveSample.wav', {}).then((buffer) => {
     waveFile = new WaveFile(buffer);
     let size = 4096 << 1
-    // add window
+
     let spectrumAnalyser = new SpectrumAnalyser(size)
     let data = waveFile.samples.slice(0, size)
     spectrumAnalyser.appendData(data);

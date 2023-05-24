@@ -14,11 +14,15 @@ module.exports = {
         await this.checkDir(targetDir)
         let fileList = await fsp.readdir(workDir, {encoding: 'utf8', withFileTypes: true})
         let files = fileList.map(file => file.name)
+        console.log(files)
         fileList = null
         assimpjs.then(async (ajs) => {
             for (let i = 0; i < files.length; i++) {
-                if (files[i].endsWith(sourceExt)) {
-                    let filePath = workDir + files[i];
+                let filePath = workDir + files[i];
+                console.log(filePath)
+                // let content = await fsp.readFile(filePath, {encoding:'utf-8'})
+                // await fsp.writeFile(filePath, content.replaceAll('.BMP', '.jpg'), {})
+                if (files[i].endsWith(sourceExt) || files[i].endsWith(sourceExt.toLowerCase())) {
                     let resultFile = ajs.ConvertFile(
                         files[i],
                         target,

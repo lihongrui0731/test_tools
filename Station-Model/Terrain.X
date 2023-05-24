@@ -9,7 +9,7 @@ Material HoehenrasterMaterial {
 0.0;0.0;0.0;;
 0.0;0.0;0.0;;
 TextureFilename {
-"C:\Users\86159\AppData\Local\Temp\IMMI\MODEL_P.BMP";
+"C:\Users\86159\AppData\Local\Temp\IMMI\MODEL_P.jpg";
 }
 }
 Material PegelrasterMaterial {
@@ -18,7 +18,7 @@ Material PegelrasterMaterial {
 0.0;0.0;0.0;;
 0.0;0.0;0.0;;
 TextureFilename {
-"C:\Users\86159\AppData\Local\Temp\IMMI\MODEL_R.BMP";
+"C:\Users\86159\AppData\Local\Temp\IMMI\MODEL_R.jpg";
 }
 }
 Material HLINMaterial {

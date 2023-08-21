@@ -1,16 +1,17 @@
 const {make, RGB} = require('binary-bmp');
 const fsp = require('fs/promises')
 
-const blockStep = 20;
-const width = 360;
-const height = 260;
+const targetFile = 'image.bmp'
+const blockStep = 4;
+const width = 100;
+const height = 100;
 const rows = (height / blockStep)
 const columns = (width / blockStep)
 
-
 /**
- * @param{String}filePath
- * @return{Array} colors array*/
+ * @param {String} filePath
+ * @returns {Promise} colors array
+ * */
 async function generateData(filePath) {
   let rawContent = await fsp.readFile(filePath, {encoding: 'utf-8'})
   let content;
@@ -20,7 +21,6 @@ async function generateData(filePath) {
   for (let i = 0; i < content.length; i++) {
     if (content[i][0] === null || content[i][1] === null || content[i][2] === null) continue
     let color = calcColor(content[i][2], 0, 120)
-    // colors.push([color.b, color.g,color.r])
     colors.push([color.r, color.g, color.b])
   }
   for (let y = 0; y < rows; y++) {
@@ -40,6 +40,7 @@ async function generateData(filePath) {
 /**
  * get BMP
  * @param {array} dataset
+ * @returns {ArrayBuffer} BMP content in ArrayBuffer
  */
 function getBMP(dataset) {
   let uint8array;
@@ -54,10 +55,10 @@ function getBMP(dataset) {
 }
 
 /**
- * @param{number}value
- * @param{number}min
- * @param{number}max
- * @returns{object} color value
+ * @param {number} value
+ * @param {number} min
+ * @param {number} max
+ * @returns {object} color value
  * */
 function calcColor(value, min, max) {
   if (value < min)
@@ -86,17 +87,20 @@ function calcColor(value, min, max) {
   }
   return c;
 }
-
-// access function
+/**
+ * @returns {Promise} fulfill with true if image file has been made
+ * */
 async function run() {
   let data = await generateData('sum-grid-values.json')
   // for (let i=0; i<data.length; i++) {
   //   if(i<40) console.log(data[i])
   // }
-  console.log(columns * rows * 400)
-  console.log(data.length)
   let bmp = getBMP(data)
-  await fsp.writeFile('image.bmp', new Uint8Array(bmp), {flag: 'w+'})
+  let fileWritten = await fsp.writeFile(targetFile, new Uint8Array(bmp), {flag: 'w+'})
+  return !fileWritten
 }
 
-run()
+// access function
+run().then(res => {
+  if(res) console.log('done with', targetFile)
+})

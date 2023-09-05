@@ -9,11 +9,13 @@
   </div>
 <!--  <HelloWorld msg="Vite + Vue" />-->
   <Chart class="chart"/>
+  <Canvas />
 </template>
 
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import Chart from './components/Charts.vue'
+import Canvas from "./components/Canvas.vue";
 </script>
 
 <style scoped>

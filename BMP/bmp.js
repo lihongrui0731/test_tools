@@ -33,18 +33,9 @@ async function generateData(filePath) {
   for (let i = 0; i < content.length; i++) {
     if (content[i][0] === null || content[i][1] === null || content[i][2] === null) continue
     let color = calcColor(content[i][2], 30, 80)
-    // dataset.push(color.r)
-    // dataset.push(color.g)
-    // dataset.push(color.b)
+    if(i == 244) console.log(content[i][2], color)
     colors.push([color.r, color.g, color.b])
   }
-  // for (let y = 0; y < rows; y++) {
-  //   let row = []
-  //   for (let x=0; x<columns; x++) {
-  //     row.push(...colors[x + y * columns])
-  //   }
-  //   dataset.push(...row)
-  // }
   // scale image
   for (let y = 0; y < rows; y++) {
     let row = []
@@ -58,6 +49,9 @@ async function generateData(filePath) {
     }
   }
   console.log(dataset.length/3, "points to render")
+  for (let i=0; i<dataset.length; i++) {
+    if(dataset[i]>255) dataset[i] = 255
+  }
   return dataset
 }
 function scaleApply(array, factor) {
@@ -99,10 +93,14 @@ function getBMP(dataset) {
  * @returns {object} color value
  * */
 function calcColor(value, min, max) {
-  if (value < min)
+  if (value < min) {
     value = min;
-  else if (value > max)
+    console.log("too low", value)
+  }
+  else if (value > max) {
     value = max;
+    console.log("too high", value)
+  }
   const dv = max - min;
   const c = {r: 0, g: 0, b: 0};
   const v = (value - min) / dv;
